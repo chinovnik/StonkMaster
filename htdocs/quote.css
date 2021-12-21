@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #202020;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#060f1a, #172941);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.loader img {
+    height: 15%;
+    transform: rotate(-46deg);
+    animation: launch 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes launch {
+    0% { transform: translate(1px, 1px) rotate(-46deg); }
+  10% { transform: translate(-1px, -2px) rotate(-47deg); }
+  20% { transform: translate(-3px, 0px) rotate(-45deg); }
+  30% { transform: translate(3px, 2px) rotate(-46deg); }
+  40% { transform: translate(1px, -1px) rotate(-47deg); }
+  50% { transform: translate(-1px, 2px) rotate(-45deg); }
+  60% { transform: translate(-3px, 1px) rotate(-46deg); }
+  70% { transform: translate(3px, 1px) rotate(-47deg); }
+  80% { transform: translate(-1px, -1px) rotate(-45deg); }
+  90% { transform: translate(1px, 2px) rotate(-46deg); }
+  100% { transform: translate(1px, -2px) rotate(-47deg); }
+}
+
+.header {
+    width: 100%;
+    height: 51px;
+    display: block;
+    background-color: #50c878;
+}
+
+.logo-container {
+    height: inherit;
+    display: table;
+    float: left;
+}
+
+.logo-container img {
+    position: relative;
+    height: 40px;
+    display: table-cell;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.logo-container h1 {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    color: #202020;
+}
+
+.stock-chart {
+    clear: both;
+    display: inline-block;
+    position: relative;
+    width: 550px;
+    top: 15px;
+    left: 20px;
+    color: #50c878;
+}
+
+.stock-chart h2 {
+    min-width: 500px;
+    display: inline-block;
+}
+
+.tradingview-widget-container {
+    width: 514px;
+    border-radius: 10px;
+    margin: none;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.stock-info {
+    display: inline-table;
+    color: #50c878;
+    position: absolute;
+    top: 100px;
+}
+
+.stock-info p {
+    display: table-row;
+    text-align: left;
+}
+
+.stock-info span {
+    display: table-cell;
+    min-width: 100px;
+    text-align: right;
+}
