@@ -1,4 +1,5 @@
 # StonkMaster
-Stock Trading React.js application using an API
+Stock Watchlist/Tracking Web App
 
-This is a little web app I worked on for my Web Database Applications course. Written overnight because us kids are bad at managing time.
+This is a little web app I worked on for my Web Database Applications course in 2021.
+Written overnight because us kids were bad at managing time.
